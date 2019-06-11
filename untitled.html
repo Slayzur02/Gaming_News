@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<title>Champion Filter</title>
+	<link rel='shortcut icon' href='images/Fazie69-League-Of-Legends-Gold-Border-Blitzcrank-Riot.ico' type='image/x-icon' />
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="tailwindbooting.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../Tailwind-and-bootstrap-practice-master/effects.js"></script>
+
+</head>
+<body class="bg-white font-hairline" style = "font-family: 'Noto Serif JP', serif;">
+
+	<div class="fixed w-full" style = "z-index: 2" id = 'navbar'>
+		<div class= 'block flex justify-center bg-none font-serif items-center w-full'>
+			
+			<!---for all screens--->
+			<div class = "flex items-center hover: cursor-pointer">
+				<div class='text-2xl align-middle text-white m-4 hover:text-red-600 hover:border-red-600' style ="">League of Legends</div>
+			</div>
+	  		
+	  		<!---if medium and above screen--->
+	  		<div class = 'flex flex-grow'></div>
+	  		<div class="p-5 px-5 text-center mt-2 text-lg text-white border-transparent border-b-4 hover:text-red-600 hover:border-red-600 cursor-pointer hidden md:block" style = "padding-bottom: 1.5rem ;">Vote</div>
+			<div class="p-5 px-5 text-center mt-2 text-lg text-white border-transparent border-b-4 hover:text-red-600 hover:border-red-600 cursor-pointer hidden md:block" style = "padding-bottom: 1.5rem ;"><a href= 'signup.html'>Sign up</a></div>
+
+						<!--- if small screen--->
+		<div class="block mr-4 md:hidden">
+	   		<button class="flex items-center text-white px-3 py-2 border rounded border-white hover:text-green-light hover:border-green-light cursor-pointer "
+					onclick="
+							if (document.getElementsByClassName('Toggled').length>0){
+							document.getElementsByClassName('Toggler')[0].style.transform='scale(1,1)'
+							document.getElementsByClassName('Toggler')[0].classList.remove('Toggled');
+
+						}
+							else {
+							document.getElementsByClassName('Toggler')[0].style.transform = 'scale(1,0)';
+							document.getElementsByClassName('Toggler')[0].classList.add('Toggled')
+						}
+						">
+      			<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      		</button>	
+	  	</div>	
+	</div>
+
+
+		<!--- addition to small screen--->
+		<div class = 'Toggler Toggled block md:hidden' style = "transform:scale(1,0); transform-origin: top; transition: 300ms">
+			<div class="text-right text-white -ml-3 text-md p-5 px-5 font-bold hover:text-red-600
+			 cursor-pointer">Vote</div>
+			 <a href= 'signup.html'><div class=" text-right text-white -ml-3  text-md p-5 px-5 font-bold hover:text-red-600 cursor-pointer " >Sign up</div></a>
+		</div>
+
+	</div>
+
+	<div class="fixed parallax-background flex bg-no-repeat bg-cover min-h-screen bg-center pb-1 w-full" style= "z-index: -1; background-image: url('images/');background-image: -webkit-linear-gradient(top, 
+    rgba(0,0,0,0.3) 0%, 
+    rgba(0,0,0,0.4) 30%,
+    rgba(0,0,0,0.6) 70%,
+    rgba(0,0,0,1.0) 100%
+  ),
+  url('images/Praetorian-Fiddlesticks-Splash-Art-HD-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol-1.jpg');
+">
+  		<div class="w-16  md:w-2/3"></div>
+  		<div class="flex flex-grow items-center text-center bg-none bg-cover min-h-screen min-w-screen sm:w-1/2 sm:bg-none ">
+  			<div class="flex flex-col pr-16 md:pr-0">
+	  			<div class=" text-center  justify-center text-white text-4xl font-serif sm:text-white lg:text-5xl  sm:px-20 "
+				
+	  			>Fight for your champions</div>
+	  			<!---<div class="text-white text-justify text-center px-5 py-6 text-md md:text-lg md:text-white">
+	  				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				</div>--->
+				<div class="justify-center text-center">
+						<a href='#first-content'><button class="mt-3 justify-center text-white bg-red-700 px-6 py-4 rounded-full">Learn more</button></a>
+				</div>
+  			</div>
+  		</div>
+  	</div>
+
+	  <div class='min-h-screen -mb-7'> </div>
+	
+	<div id='first-content' class="flex flex-col min-h-screen text-gray-200 bg-left bg-cover bg-center" style = "background-image: -webkit-linear-gradient(left, 
+    rgba(0,0,0,0.0) 0%, 
+    rgba(0,0,0,0.5) 30%,
+    rgba(0,0,0,0.6) 60%,
+    rgba(0,0,0,0.0) 100%
+  ),
+  url('images/deathmatch.jpg')" id ='description-voting'>
+		<div class="flex mt-12 justify-center text-4xl font-bold px-4 mb-4 md:mt-16 md:text-5xl " style = "color:#DAA520">Do or Die</div>	
+		<div class="w-full mt-8 mb-8 text-xl px-16 md:w-3/5 md:mt-32 md:text-base xl: text-2xl ">
+			<p>Greetings, summoners!</p>
+			<br>
+			<p>It is my pleasure here today for you all to come and witness the crucification of one of the most hated champions in league. Who is that champion, you ask? Vote! Vote and decide the victim! Let democracy rule the state of League!</p>
+			<br>
+			<p>During this process, each of you will get to sign up and vote for exactly one champion. No exceptions. The scores shall be hidden until the end of the voting ralley (which is the last day of June). Prepare yourself, and think carefully, as this change shall be permanenet.</p>
+			<br>
+			What are you waiting for? Sign up, and let the games begin!
+		</div>
+	</div>
+	
+	<div class="flex flex-col min-h-screen items-center text-gray-200 bg-top bg-cover" style = "background-image: -webkit-linear-gradient(left, 
+    rgba(0,0,0,0.0) 0%, 
+    rgba(0,0,0,0.4) 30%,
+    rgba(0,0,0,0.5) 60%,
+    rgba(0,0,0,0.7) 100%
+  ),
+  url('images/sorcery.jpg')">
+		<div class="flex mt-12 justify-center text-4xl font-bold mt-2 mb-3 md:mt-16" style = "color: #DAA520; " >Choose the champion</div>
+		<div class="flex flex-col items-center mb-6 justify-center md:flex-row min-h-screen">
+			<div class=" w-4/5 flex flex-col md:w-3/5" >
+				<div id = 'aatrox' class = "invisible flex flex-col w-full bg-black rounded mt-12 md:flex-row">
+						<div class ="w-full h-56 rounded bg-cover bg-center md:w-64 md:min-h-full" style = "background-image: url('images/Aatrox.jpg')"></div>
+						<div class="w-full text-white p-6   ">
+							<p class = "text-xl font-bold"> Aatrox</p>
+							<p class="text-xs md:text-sm lg:text-base">Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.</p>
+						</div>
+				</div>
+				<div id='akali' class = "invisible flex flex-col w-full bg-black rounded mt-12 md:flex-row ">
+					<div class = " w-full h-56 rounded bg-cover bg-center md:w-64 md:min-h-full" style = "background-image: url('images/Akali.jpg')"></div>
+					<div class="w-full text-white p-6   ">
+						<p class = "text-xl font-bold"> Akali</p>
+						<p class="text-xs md:text-sm lg:text-base">Abandoning her title of the Fist of Shadow, Akali now strikes alone, ready to be the deadly weapon her people need. Though she holds onto all she learned from her master Shen, she has pledged to defend Ionia from its enemies, one kill at a time. Akali may strike in silence, but her message will be heard loud and clear: fear the assassin with no master.</p></div>
+				</div>
+				<div id='ahri' class = "invisible flex flex-col w-full bg-black rounded mt-12 md:flex-row ">
+						<div class = "w-full h-56 rounded bg-cover bg-center md:w-64 md:min-h-full" style = "background-image: url('images/ahri.jpg')"></div>
+						<div class="w-full text-white p-6   ">
+							<p class = "text-xl font-bold"> Ahri</p>
+							<p class="text-xs md:text-sm lg:text-base">Ahri is a vastaya who can reshape magic into Orb of Deception orbs of raw energy. She revels in toying with her prey by manipulating their emotions before devouring their Essence Theft life essence. Despite her predatory nature, Ahri retains a sense of empathy as she receives flashes of memory from each soul she consumes.</p>
+						</div>
+				</div>
+				<div id='alistar' class = "invisible flex flex-col w-full bg-black rounded mt-12 md:flex-row ">
+						<div class = "w-full h-56 rounded bg-cover bg-center md:w-64 md:min-h-full" style = "background-image: url('images/Alistar.jpg')"></div>
+						<div class="w-full text-white p-6   ">
+							<p class = "text-xl font-bold"> Alistar</p>
+							<p class="text-xs md:text-sm lg:text-base">When Alistar returned, he found his village burning and his family slain. He charged an entire regiment of Noxus' elite, slaughtering them by the hundreds. Only the most skilled blood mages checked Alistar's rage. Alistar spent the intervening years as a gladiator in the Fleshing, pitted in endless battle for the entertainment of Noxus' wealthy leaders.</p>
+						</div>
+				</div>
+				<div id='amumu' class = "invisible flex flex-col w-full bg-black rounded mt-12 md:flex-row ">
+						<div class = "w-full h-56 rounded bg-cover bg-center md:w-64 md:min-h-full" style = "background-image: url('images/Amumu.jpg')"></div>
+						<div class="w-full text-white p-6   ">
+							<p class = "text-xl font-bold"> Amumu</p>
+							<p class="text-xs md:text-sm lg:text-base"> Cursed by an ancient spell, he is doomed to remain alone forever. Those who claim to have seen him describe Amumu as a living cadaver, small in stature and covered in bandages the color of lichen. Amumu has inspired myths, folklore, and legends told and retold for generations – such that it is impossible to separate truth from fiction.</p>
+						</div>
+					</div>
+
+			</div>
+		</div>
+	</div>	
+	<footer style="
+		width: 100vw;
+		height: 200px;
+		display: flex;
+		justify-content: space-between;
+		background-color:#020F15;
+		font-size: 15px;
+		justify-content: center;
+		align-items: center;
+		color: white; ">
+
+		<div style = "
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: flex-start;		">
+			<div style = "
+		display: flex;
+		">
+				<h1 style = "
+					color: #DAA520;
+					font-size: 2rem;
+				">Champion Filter</h1>
+			</div>
+			<div class = "h-16 w-16 bg-cover bg-center"style = "background-image: url('images/VelKoz-icon.png')"></div>
+			<p class='text-red-600'>by Riot Games</p>
+		</div>
+	</footer>
+
+		
+</body>
+</html>
