@@ -4,7 +4,6 @@
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  console.log(currentScrollPos)
 document.getElementsByClassName('parallax-background')[0].style.transform = 'translate(0px, -' + currentScrollPos /2 + + '%)'
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.opacity = "1";
